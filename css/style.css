@@ -1,0 +1,40 @@
+body {
+    overflow: hidden;
+}
+header {
+	position: absolute;
+	margin: 0;
+	top:0;
+	height: 50px;
+	background: #4D4D4D;
+	left: 0;
+	right: 0;
+	padding: 10px;
+}
+header #filename {
+	height: 20px;
+	border: 3pt inset #eee;
+	background: #d2d2d2;
+	color: #333;
+	min-width: 150px;
+	display: inline-block;
+	vertical-align: middle;
+}
+header button {
+	border: 3pt outset #eee;
+	background: #d2d2d2;
+	color: #333;
+}
+header button:active {
+	border: 3pt inset #eee;
+	background: #d2d2d2;
+	color: #333;
+}
+#editor { 
+    margin: 0;
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
