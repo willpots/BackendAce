@@ -1,5 +1,6 @@
 body {
     overflow: hidden;
+    font-family: "HelveticaNeue-Light",sans-serif;
 }
 header {
 	font-family: 'Andika', sans-serif;
@@ -18,7 +19,7 @@ header #filename {
 	border: 3pt inset #eee;
 	background: #d2d2d2;
 	color: #333;
-	min-width: 150px;
+	min-width: 300px;
 	display: inline-block;
 	vertical-align: middle;
 	z-index: 4;
@@ -70,4 +71,38 @@ header button:active {
 }
 #open-lightbox.showing, #open-lightbg.showing {
 	display: block;
+}
+#open-lightbox a.file {
+	background-image: url('../img/file.png');
+	background-repeat: no-repeat;
+	background-size: 15px 15px;
+	background-position: 5px center;
+}
+#open-lightbox a.dir {
+	background-image: url('../img/dir.png');
+	background-repeat: no-repeat;
+	background-size: 15px 15px;
+	background-position: 5px center;
+}
+#open-lightbox a:nth-child(even) {
+	background-color: #eee;
+}
+#open-lightbox  a:nth-child(odd) {
+	background-color: #ddd;
+}
+#open-lightbox a,
+#open-lightbox a:link,
+#open-lightbox a:visited {
+	display: block;
+	padding: 2px 10px 2px 30px;
+	color: #333;
+	text-decoration: none;
+	transition:all .2s ease-in;
+	-webkit-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	-moz-transition: all .2s ease-in;
+}
+#open-lightbox a:hover {
+	color: #610;
+	background-color: #fdd;
 }
