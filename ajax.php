@@ -37,6 +37,7 @@ if(isset($_POST['goto'])) {
 	}
 
 } else if(isset($_POST['pullfile'])) {
+	$path = $_POST['path'];
 	if(strrpos($path,'/')!=(strlen($path)-1)) {
 		$path .= '/';
 	}
